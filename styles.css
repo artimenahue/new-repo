@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: linear-gradient(to bottom, #434343 0%, rgb(27, 27, 27) 100%); */
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "lato", sans-serif;
+}
+.social {
+  list-style: none inside;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.Social_align {
+  margin-top: 65px !important;
+}
+.socialIcon {
+  width: auto;
+  height: 2em;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition: opacity 0.5s;
+}
+.socialIcon:hover {
+  opacity: 0.5;
+}
+#autor {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  margin-top: 15px;
+  font-size: 10px;
+}
+h3 {
+  color: #edf0f1;
+  font-size: 28px;
+  font-weight: bold;
+  margin: auto;
+  width: 90%;
+}
+h4 {
+  color: #f7f7f7;
+}
+.titulo_page {
+  margin: auto;
+  padding-right: 50px;
+  color: #fff;
+  font-size: 45px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.article-bio {
+  margin: auto;
+  padding: 20px 0 30px 0;
+}
+p {
+  color: #edf0f1;
+  font-weight: normal;
+  margin: auto;
+  margin-top: 0;
+  width: 90%;
+  margin-bottom: 1rem;
+  font-size: auto;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+/*ESTILOS DE HEADER - NAVBAR*/
+li,
+a {
+  font-family: Oxygen, sans-serif;
+  font-weight: 500;
+  font-size: auto;
+  color: #edf0f1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#logo {
+  width: auto;
+  height: 7rem;
+  transition: transform 0.4s ease-in-out;
+}
+#logo:hover {
+  transform: rotate(180deg);
+}
+.menu {
+  list-style: none;
+}
+.menu li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.navLink {
+  text-decoration: none;
+  color: inherit;
+  padding: 2px;
+  position: relative;
+}
+.navLink:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: ghostwhite;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+.navLink:hover:after {
+  width: 100%;
+  right: 0;
+}
+
+/*ESTILOS DE CARUSEL*/
+.section {
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+}
+.carousel-inner img {
+  width: 100% !important;
+  max-width: auto;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #fff !important;
+}
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+  filter: invert(0) grayscale(100) !important;
+}
+
+/*ESTILOS MUSIC PLAYERS*/
+.card_box {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+.card__music {
+  background-color: transparent !important ;
+  border: none;
+}
+.card__music--image {
+  max-width: 13rem !important;
+  height: auto;
+  cursor: pointer;
+  filter: saturate(0%);
+  transition: 0.3s ease-in-out;
+}
+.card__music--image:hover {
+  transform: scale(1.1);
+  filter: saturate(100%);
+}
+
+/*ESTILOS DE GALERIA*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 60px auto;
+  grid-gap: 5px;
+}
+
+.gallery--image {
+  max-width: 100%;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.2s all ease;
+}
+.gallery--image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+#album1 {
+  background-image: url(Multimedia/Discografia/1\ -\ soda-stereo.jpeg);
+  background-size: 100%;
+}
+#album2 {
+  background-image: url(Multimedia/Discografia/2\ -\ nada-personal.jpeg);
+  background-size: 100%;
+}
+#album3 {
+  background-image: url(/Multimedia/Discografia/3\ -\ signos.jpeg);
+  background-size: 100%;
+}
+#album4 {
+  background-image: url(Multimedia/Discografia/5\ -\ doble-vida.jpeg);
+  background-size: 100%;
+}
+#album5 {
+  background-image: url(Multimedia/Discografia/7\ -\ cancion-animal.jpeg);
+  background-size: 100%;
+}
+#album6 {
+  background-image: url(Multimedia/Discografia/9\ -\ dynamo.jpeg);
+  background-size: 100%;
+}
+#album7 {
+  background-image: url(Multimedia/Discografia/11\ -\ sueno-stereo.jpeg);
+  background-size: 100%;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.titulo__album {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.text__album {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+.album--image {
+  border-radius: 4px;
+  opacity: 0.6;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.album--image:hover {
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
+    0 10px 10px rgba(255, 255, 255, 0.22);
+  opacity: 1;
+}
+br {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/*BIO*/
+.col-md-8 {
+  flex: 0 0 auto;
+  width: 50.6666666667% !important;
+}
+/*FIRST MOBILE*/
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 65%;
+  }
+  header {
+    width: 100%;
+  }
+
+  .gallery {
+    max-width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+  .albums {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .album {
+    grid-template-columns: 100px 1fr;
+  }
+  .albumImage {
+    width: 100%;
+    height: 100px;
+  }
+  .albumImage:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px rgb(219, 219, 219);
+  }
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 50.6666666667% !important;
+  }
+}
+.albumDetails {
+  padding: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .gallery {
+    max-width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 38%;
+  }
+  header {
+    width: 100%;
+  }
+  .gallery {
+    max-width: 420px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+  }
+
+  form {
+    width: 90%;
+  }
+}

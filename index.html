@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Soda Stereo FanPage" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>SODA STEREO - FanPage</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <header>
+      <div class="navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+          <img
+            src="Multimedia/logosoda.png"
+            alt=""
+            class="rounded float-start"
+            id="logo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#miLista"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end text-center"
+            id="miLista"
+          >
+            <ul class="navbar-nav pull-right fw-bold">
+              <li class="nav-item fs-5">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a href="galeria.html" class="nav-link">Galeria</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a href="Discografia.html" class="nav-link">Discogria</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a href="bio.html" class="nav-link">Bio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Carrousel -->
+    <main>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="/Multimedia/carousel/slide-1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="/Multimedia/carousel/slide-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/Multimedia/carousel/slide-3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/Multimedia/carousel/slide-4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section>
+        <br></br>
+        <h3 class="text-center">ESUCHANOS EN LAS PLATAFORMAS DIGITALES</h3>
+        <!-- Music Players -->
+        <!-- Spotify -->
+        <div class="row justify-content-center my-5 card_box">
+          <div class="card__music text-center" style="width: 18rem">
+            <a href="https://open.spotify.com/artist/7An4yvF7hDYDolN4m5zKBp" class="btn">
+            <img
+              class="card__music--image"
+              src="Social/spotify.png"
+              alt="Card image cap"
+            />
+          </a>
+            <div class="card-body">
+              <h4 class="card-title">Spotify</h4>
+              </a>
+            </div>
+          </div>
+          <!-- Deezer -->
+
+          <div class="card__music text-center" style="width: 18rem">
+            <a href="https://www.deezer.com/mx/artist/4345" class="btn">
+            <img
+              class="card__music--image img-fluid"
+              src="Social/deezer.png"
+              alt="Card image cap"
+            />
+          </a>
+            <div class="card-body">
+              <h4 class="card-title">Deezer</h4>
+              </a>
+            </div>
+          </div>
+          <!-- Youtube -->
+          <div class="card__music text-center" style="width: 18rem">
+            <a href="https://music.youtube.com/channel/UCQJuTjhtb6Oyy2kStA1BUKw" class="btn">
+            <img
+              class="card__music--image"
+              src="Social/youtube-music.png"
+              alt="Card image cap"
+            />
+            </a>
+            <div class="card-body">
+              <h4 class="card-title text-center">Youtube Music</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <br />
+      <br />
+
+      <div class="container">
+        <div class="row text-center text-md-left">
+            <div class="col-md-4">
+                <form action="#" method="POST" id="suscribeForm">
+                    <h4 class="text-uppercase">¿Quieres suscribirte a nuestro Newsletter?</h4>
+                    <div class="form-group" data-children-count="1">
+                        <input type="email" class="form-control" id="email1" name="email" placeholder="tu@correo.com" >
+                        <h5 class="form-text text-muted font-weight-bold">Su informacion esta protegida y no sera compartida con nadie mas</h5>
+                    </div>
+                    <button class="btn btn-primary form-text">Suscribirme</button>
+                </form>
+            </div>
+            <div class="col-md-3 offset-md-5">
+              <div class="text-center Social_align">
+                <h4 class="badge badge-secondary">Siguenos</h4>
+                <ul class="nav flex-row text-center justify-content-center">
+                    <li class="nav-item"><a href="#"><img src="Social/facebook.png" alt="facebook" class="socialIcon"></a></li>
+                    <li class="nav-item"><a href="#"><img src="Social/youtubemusic.png" alt="youtube" class="socialIcon"></a></li>
+                    <li class="nav-item"><a href="#"><img src="Social/instagram.png" alt="instagram" class="socialIcon"></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+      <br />
+      <p id="autor">© 2021 by NAHUEL ARTIME</p>
+      <br />
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
